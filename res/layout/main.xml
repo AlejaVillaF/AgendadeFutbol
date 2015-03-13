@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    style="@style/relativelayout"
+    android:background="@drawable/fondoapli"
+    android:clickable="true">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="90dp"
+                android:text="Inicio"
+                android:id="@+id/inicio"
+                android:onClick="btninicio"
+                android:background="#f80a8b19"
+                android:textColor="#c4fffbf9" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="90dp"
+                android:text="Equipos"
+                android:id="@+id/equipos"
+                android:onClick="btnequipos"
+                android:background="#F80A8B19"
+                android:textColor="#c4fbfff6" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:text="Partidos"
+                android:id="@+id/partidos"
+                android:background="#F80A8B19"
+                android:textColor="#c4fbfff6" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:text="Estadios"
+                android:id="@+id/estadios"
+                android:background="#F80A8B19"
+                android:textColor="#c4fbfff6" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="90dp"
+                android:text="Premios"
+                android:id="@+id/premios"
+                android:background="#F80A8B19"
+                android:textColor="#c4fbfff6" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/fondo" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Developed by Jonatan, Oscar &amp; Alejandra"
+        android:id="@+id/textView"
+        android:textColor="#ffffffff"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
